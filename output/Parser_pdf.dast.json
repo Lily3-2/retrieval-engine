@@ -1,0 +1,955 @@
+{
+  "node_id": "doc",
+  "uuid": "be345d24-8b25-4ee7-88de-90ed1e745127",
+  "content_hash": "a6de34d7ceb08950",
+  "node_type": "document",
+  "title": "sample.pdf",
+  "text": "",
+  "level": null,
+  "semantic_path": [
+    "sample.pdf"
+  ],
+  "parent_id": null,
+  "physical_location": null,
+  "cross_references": [],
+  "metadata": {},
+  "children": [
+    {
+      "node_id": "doc.1",
+      "uuid": "3a9c6063-b7c9-4b5c-92e4-791e8b7b0348",
+      "content_hash": "0743bdd2bd815ca9",
+      "node_type": "section",
+      "title": "Employee Leave Policy Specification",
+      "text": "",
+      "level": 1,
+      "semantic_path": [
+        "sample.pdf",
+        "Employee Leave Policy Specification"
+      ],
+      "parent_id": "doc",
+      "physical_location": {
+        "source_format": "pdf",
+        "page_start": 1,
+        "page_end": 1,
+        "bbox": [
+          72.0,
+          56.1,
+          423.3,
+          76.1
+        ]
+      },
+      "cross_references": [],
+      "metadata": {},
+      "children": [
+        {
+          "node_id": "doc.1.1",
+          "uuid": "8ed9df34-19bf-4741-bc8c-051483c8ecfc",
+          "content_hash": "375997fd6af28f35",
+          "node_type": "section",
+          "title": "1. Overview",
+          "text": "",
+          "level": 2,
+          "semantic_path": [
+            "sample.pdf",
+            "Employee Leave Policy Specification",
+            "1. Overview"
+          ],
+          "parent_id": "doc.1",
+          "physical_location": {
+            "source_format": "pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "bbox": [
+              72.0,
+              97.3,
+              160.9,
+              113.3
+            ]
+          },
+          "cross_references": [],
+          "metadata": {},
+          "children": [
+            {
+              "node_id": "doc.1.1.1",
+              "uuid": "ca2a7606-af7b-499d-8614-8c23e6f9e6b4",
+              "content_hash": "2009004322b35c87",
+              "node_type": "paragraph",
+              "title": null,
+              "text": "This document defines the accrual and carryover rules for annual",
+              "level": null,
+              "semantic_path": [
+                "sample.pdf",
+                "Employee Leave Policy Specification",
+                "1. Overview"
+              ],
+              "parent_id": "doc.1.1",
+              "physical_location": {
+                "source_format": "pdf",
+                "page_start": 1,
+                "page_end": 1,
+                "bbox": [
+                  72.0,
+                  123.3,
+                  388.7,
+                  134.3
+                ]
+              },
+              "cross_references": [],
+              "metadata": {},
+              "children": []
+            },
+            {
+              "node_id": "doc.1.1.2",
+              "uuid": "6e63c5c7-a7b7-47bb-a0f1-5c28c52ab87c",
+              "content_hash": "173742b95c10140b",
+              "node_type": "paragraph",
+              "title": null,
+              "text": "leave. See Table 1 for the accrual rate schedule and Section 2.1",
+              "level": null,
+              "semantic_path": [
+                "sample.pdf",
+                "Employee Leave Policy Specification",
+                "1. Overview"
+              ],
+              "parent_id": "doc.1.1",
+              "physical_location": {
+                "source_format": "pdf",
+                "page_start": 1,
+                "page_end": 1,
+                "bbox": [
+                  72.0,
+                  141.3,
+                  385.1,
+                  152.3
+                ]
+              },
+              "cross_references": [
+                {
+                  "raw_text": "Section 2.1",
+                  "target_node_id": null,
+                  "resolved": false
+                },
+                {
+                  "raw_text": "Table 1",
+                  "target_node_id": null,
+                  "resolved": false
+                }
+              ],
+              "metadata": {},
+              "children": []
+            },
+            {
+              "node_id": "doc.1.1.3",
+              "uuid": "34b7668e-1f89-41b1-9608-1cd468e9603a",
+              "content_hash": "ff2cce09c08fa56c",
+              "node_type": "paragraph",
+              "title": null,
+              "text": "for proration rules.",
+              "level": null,
+              "semantic_path": [
+                "sample.pdf",
+                "Employee Leave Policy Specification",
+                "1. Overview"
+              ],
+              "parent_id": "doc.1.1",
+              "physical_location": {
+                "source_format": "pdf",
+                "page_start": 1,
+                "page_end": 1,
+                "bbox": [
+                  72.0,
+                  159.3,
+                  161.3,
+                  170.3
+                ]
+              },
+              "cross_references": [],
+              "metadata": {},
+              "children": []
+            }
+          ]
+        },
+        {
+          "node_id": "doc.1.2",
+          "uuid": "eccc0993-d005-4cf8-afdf-bd906af58359",
+          "content_hash": "af55bb97984db2dd",
+          "node_type": "section",
+          "title": "2. Accrual Rules",
+          "text": "",
+          "level": 2,
+          "semantic_path": [
+            "sample.pdf",
+            "Employee Leave Policy Specification",
+            "2. Accrual Rules"
+          ],
+          "parent_id": "doc.1",
+          "physical_location": {
+            "source_format": "pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "bbox": [
+              72.0,
+              183.3,
+              196.5,
+              199.3
+            ]
+          },
+          "cross_references": [],
+          "metadata": {},
+          "children": [
+            {
+              "node_id": "doc.1.2.1",
+              "uuid": "597a6c66-e742-4ec0-b257-187e37180b54",
+              "content_hash": "3052b711eda18201",
+              "node_type": "section",
+              "title": "2.1 Proration",
+              "text": "",
+              "level": 3,
+              "semantic_path": [
+                "sample.pdf",
+                "Employee Leave Policy Specification",
+                "2. Accrual Rules",
+                "2.1 Proration"
+              ],
+              "parent_id": "doc.1.2",
+              "physical_location": {
+                "source_format": "pdf",
+                "page_start": 1,
+                "page_end": 1,
+                "bbox": [
+                  72.0,
+                  207.7,
+                  151.5,
+                  220.7
+                ]
+              },
+              "cross_references": [],
+              "metadata": {},
+              "children": [
+                {
+                  "node_id": "doc.1.2.1.1",
+                  "uuid": "60738efa-c2c9-4d15-8f46-ffd229cb4545",
+                  "content_hash": "6a20b26880ed3afd",
+                  "node_type": "paragraph",
+                  "title": null,
+                  "text": "Proration applies to employees who join mid-year. As per Section",
+                  "level": null,
+                  "semantic_path": [
+                    "sample.pdf",
+                    "Employee Leave Policy Specification",
+                    "2. Accrual Rules",
+                    "2.1 Proration"
+                  ],
+                  "parent_id": "doc.1.2.1",
+                  "physical_location": {
+                    "source_format": "pdf",
+                    "page_start": 1,
+                    "page_end": 1,
+                    "bbox": [
+                      72.0,
+                      227.3,
+                      389.9,
+                      238.3
+                    ]
+                  },
+                  "cross_references": [],
+                  "metadata": {},
+                  "children": []
+                },
+                {
+                  "node_id": "doc.1.2.1.2",
+                  "uuid": "a5bdcf30-9714-42b3-8c17-3c1afdc1180b",
+                  "content_hash": "ed45755e2c781aed",
+                  "node_type": "paragraph",
+                  "title": null,
+                  "text": "3, the proration factor is computed monthly.",
+                  "level": null,
+                  "semantic_path": [
+                    "sample.pdf",
+                    "Employee Leave Policy Specification",
+                    "2. Accrual Rules",
+                    "2.1 Proration"
+                  ],
+                  "parent_id": "doc.1.2.1",
+                  "physical_location": {
+                    "source_format": "pdf",
+                    "page_start": 1,
+                    "page_end": 1,
+                    "bbox": [
+                      72.0,
+                      245.3,
+                      283.5,
+                      256.3
+                    ]
+                  },
+                  "cross_references": [],
+                  "metadata": {},
+                  "children": []
+                }
+              ]
+            },
+            {
+              "node_id": "doc.1.2.2",
+              "uuid": "7209c73a-dbd7-47c3-93e1-8f79762e9b86",
+              "content_hash": "a9948aa4ff4ec0f9",
+              "node_type": "section",
+              "title": "2.2 Ceiling",
+              "text": "",
+              "level": 3,
+              "semantic_path": [
+                "sample.pdf",
+                "Employee Leave Policy Specification",
+                "2. Accrual Rules",
+                "2.2 Ceiling"
+              ],
+              "parent_id": "doc.1.2",
+              "physical_location": {
+                "source_format": "pdf",
+                "page_start": 1,
+                "page_end": 1,
+                "bbox": [
+                  72.0,
+                  267.7,
+                  137.0,
+                  280.7
+                ]
+              },
+              "cross_references": [],
+              "metadata": {},
+              "children": [
+                {
+                  "node_id": "doc.1.2.2.1",
+                  "uuid": "065ab8b9-6524-4108-bf83-d2dd21029f3c",
+                  "content_hash": "fe734fb02c5d268f",
+                  "node_type": "paragraph",
+                  "title": null,
+                  "text": "The maximum accrual ceiling is 42 days. Any balance above this",
+                  "level": null,
+                  "semantic_path": [
+                    "sample.pdf",
+                    "Employee Leave Policy Specification",
+                    "2. Accrual Rules",
+                    "2.2 Ceiling"
+                  ],
+                  "parent_id": "doc.1.2.2",
+                  "physical_location": {
+                    "source_format": "pdf",
+                    "page_start": 1,
+                    "page_end": 1,
+                    "bbox": [
+                      72.0,
+                      287.3,
+                      386.8,
+                      298.3
+                    ]
+                  },
+                  "cross_references": [],
+                  "metadata": {},
+                  "children": []
+                },
+                {
+                  "node_id": "doc.1.2.2.2",
+                  "uuid": "04df1d77-0e74-4077-9a0f-f28a0b040710",
+                  "content_hash": "7d31ac8152ac5324",
+                  "node_type": "paragraph",
+                  "title": null,
+                  "text": "ceiling is forfeited at year-end unless covered by an exception",
+                  "level": null,
+                  "semantic_path": [
+                    "sample.pdf",
+                    "Employee Leave Policy Specification",
+                    "2. Accrual Rules",
+                    "2.2 Ceiling"
+                  ],
+                  "parent_id": "doc.1.2.2",
+                  "physical_location": {
+                    "source_format": "pdf",
+                    "page_start": 1,
+                    "page_end": 1,
+                    "bbox": [
+                      72.0,
+                      305.3,
+                      372.8,
+                      316.3
+                    ]
+                  },
+                  "cross_references": [],
+                  "metadata": {},
+                  "children": []
+                },
+                {
+                  "node_id": "doc.1.2.2.3",
+                  "uuid": "fda821bc-2f0f-4b70-98e2-3f41aa995540",
+                  "content_hash": "65460fa22fba505c",
+                  "node_type": "paragraph",
+                  "title": null,
+                  "text": "in Appendix A.",
+                  "level": null,
+                  "semantic_path": [
+                    "sample.pdf",
+                    "Employee Leave Policy Specification",
+                    "2. Accrual Rules",
+                    "2.2 Ceiling"
+                  ],
+                  "parent_id": "doc.1.2.2",
+                  "physical_location": {
+                    "source_format": "pdf",
+                    "page_start": 1,
+                    "page_end": 1,
+                    "bbox": [
+                      72.0,
+                      323.3,
+                      142.9,
+                      334.3
+                    ]
+                  },
+                  "cross_references": [
+                    {
+                      "raw_text": "Appendix A",
+                      "target_node_id": "doc.1.4",
+                      "resolved": true
+                    }
+                  ],
+                  "metadata": {},
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "node_id": "doc.1.3",
+          "uuid": "a9897b25-e6fd-410b-8f06-1b398e81f935",
+          "content_hash": "33f0570971762d27",
+          "node_type": "section",
+          "title": "3. Carryover",
+          "text": "",
+          "level": 2,
+          "semantic_path": [
+            "sample.pdf",
+            "Employee Leave Policy Specification",
+            "3. Carryover"
+          ],
+          "parent_id": "doc.1",
+          "physical_location": {
+            "source_format": "pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "bbox": [
+              72.0,
+              347.3,
+              165.4,
+              363.3
+            ]
+          },
+          "cross_references": [],
+          "metadata": {},
+          "children": [
+            {
+              "node_id": "doc.1.3.1",
+              "uuid": "c777b71b-5541-49c7-8213-d98bd7e2b9ab",
+              "content_hash": "8af336ec7e91f81a",
+              "node_type": "paragraph",
+              "title": null,
+              "text": "Carryover is calculated at fiscal year-end. See Table 1 for the",
+              "level": null,
+              "semantic_path": [
+                "sample.pdf",
+                "Employee Leave Policy Specification",
+                "3. Carryover"
+              ],
+              "parent_id": "doc.1.3",
+              "physical_location": {
+                "source_format": "pdf",
+                "page_start": 1,
+                "page_end": 1,
+                "bbox": [
+                  72.0,
+                  373.3,
+                  370.3,
+                  384.3
+                ]
+              },
+              "cross_references": [
+                {
+                  "raw_text": "Table 1",
+                  "target_node_id": null,
+                  "resolved": false
+                }
+              ],
+              "metadata": {},
+              "children": []
+            },
+            {
+              "node_id": "doc.1.3.2",
+              "uuid": "a6e79226-decb-46e7-bbaf-bb71f2595f2f",
+              "content_hash": "e934e53c6a3215f7",
+              "node_type": "paragraph",
+              "title": null,
+              "text": "full accrual schedule referenced above.",
+              "level": null,
+              "semantic_path": [
+                "sample.pdf",
+                "Employee Leave Policy Specification",
+                "3. Carryover"
+              ],
+              "parent_id": "doc.1.3",
+              "physical_location": {
+                "source_format": "pdf",
+                "page_start": 1,
+                "page_end": 1,
+                "bbox": [
+                  72.0,
+                  391.3,
+                  263.4,
+                  402.3
+                ]
+              },
+              "cross_references": [],
+              "metadata": {},
+              "children": []
+            }
+          ]
+        },
+        {
+          "node_id": "doc.1.4",
+          "uuid": "1c264c81-356e-4082-85b4-80e01b5a667b",
+          "content_hash": "b69724fdfd3319ae",
+          "node_type": "section",
+          "title": "Appendix A: Exceptions",
+          "text": "",
+          "level": 2,
+          "semantic_path": [
+            "sample.pdf",
+            "Employee Leave Policy Specification",
+            "Appendix A: Exceptions"
+          ],
+          "parent_id": "doc.1",
+          "physical_location": {
+            "source_format": "pdf",
+            "page_start": 1,
+            "page_end": 1,
+            "bbox": [
+              72.0,
+              507.3,
+              256.0,
+              523.3
+            ]
+          },
+          "cross_references": [
+            {
+              "raw_text": "Appendix A",
+              "target_node_id": "doc.1.4",
+              "resolved": true
+            }
+          ],
+          "metadata": {},
+          "children": [
+            {
+              "node_id": "doc.1.4.1",
+              "uuid": "3a98d0c7-69f4-45b6-b882-bccbdc39e5e8",
+              "content_hash": "d985ee3533ba324e",
+              "node_type": "paragraph",
+              "title": null,
+              "text": "Employees on approved sabbatical retain their full accrual",
+              "level": null,
+              "semantic_path": [
+                "sample.pdf",
+                "Employee Leave Policy Specification",
+                "Appendix A: Exceptions"
+              ],
+              "parent_id": "doc.1.4",
+              "physical_location": {
+                "source_format": "pdf",
+                "page_start": 1,
+                "page_end": 1,
+                "bbox": [
+                  72.0,
+                  533.3,
+                  353.8,
+                  544.3
+                ]
+              },
+              "cross_references": [],
+              "metadata": {},
+              "children": []
+            },
+            {
+              "node_id": "doc.1.4.2",
+              "uuid": "a7996637-8c16-48f5-9de5-4fd1638413e0",
+              "content_hash": "19960f45e0479f05",
+              "node_type": "paragraph",
+              "title": null,
+              "text": "ceiling regardless of the standard forfeiture rule in Section 2.2.",
+              "level": null,
+              "semantic_path": [
+                "sample.pdf",
+                "Employee Leave Policy Specification",
+                "Appendix A: Exceptions"
+              ],
+              "parent_id": "doc.1.4",
+              "physical_location": {
+                "source_format": "pdf",
+                "page_start": 1,
+                "page_end": 1,
+                "bbox": [
+                  72.0,
+                  551.3,
+                  374.6,
+                  562.3
+                ]
+              },
+              "cross_references": [
+                {
+                  "raw_text": "Section 2.2",
+                  "target_node_id": null,
+                  "resolved": false
+                }
+              ],
+              "metadata": {},
+              "children": []
+            },
+            {
+              "node_id": "doc.1.4.3",
+              "uuid": "1359fb4a-61a0-400d-b177-1a3e101e8867",
+              "content_hash": "64d704f355947d44",
+              "node_type": "table",
+              "title": null,
+              "text": "",
+              "level": null,
+              "semantic_path": [
+                "sample.pdf",
+                "Employee Leave Policy Specification",
+                "Appendix A: Exceptions"
+              ],
+              "parent_id": "doc.1.4",
+              "physical_location": {
+                "source_format": "pdf",
+                "page_start": 1,
+                "page_end": 1,
+                "bbox": [
+                  72.0,
+                  428.0,
+                  412.0,
+                  500.0
+                ]
+              },
+              "cross_references": [],
+              "metadata": {},
+              "children": [
+                {
+                  "node_id": "doc.1.4.3.1",
+                  "uuid": "19b17736-8a7d-4305-ac00-27ecdfff4c5f",
+                  "content_hash": "dfd4a04a2fbd32ba",
+                  "node_type": "table_row",
+                  "title": null,
+                  "text": "",
+                  "level": 0,
+                  "semantic_path": [
+                    "sample.pdf",
+                    "Employee Leave Policy Specification",
+                    "Appendix A: Exceptions"
+                  ],
+                  "parent_id": "doc.1.4.3",
+                  "physical_location": null,
+                  "cross_references": [],
+                  "metadata": {},
+                  "children": [
+                    {
+                      "node_id": "doc.1.4.3.1.1",
+                      "uuid": "786fc5bb-feb5-4ce6-8fe8-c478682d7c9e",
+                      "content_hash": "ed4007c545d16c1c",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "Grade",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.pdf",
+                        "Employee Leave Policy Specification",
+                        "Appendix A: Exceptions"
+                      ],
+                      "parent_id": "doc.1.4.3.1",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {},
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.4.3.1.2",
+                      "uuid": "77908546-2609-45ac-ab32-3f66c9e7737f",
+                      "content_hash": "226ba363ae6b0465",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "Monthly Accrual",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.pdf",
+                        "Employee Leave Policy Specification",
+                        "Appendix A: Exceptions"
+                      ],
+                      "parent_id": "doc.1.4.3.1",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {},
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.4.3.1.3",
+                      "uuid": "565e7a88-6e8e-4d92-821b-3a16e6a18859",
+                      "content_hash": "ebf79678915fe55b",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "Annual Cap",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.pdf",
+                        "Employee Leave Policy Specification",
+                        "Appendix A: Exceptions"
+                      ],
+                      "parent_id": "doc.1.4.3.1",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {},
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "node_id": "doc.1.4.3.2",
+                  "uuid": "ef25d4c9-f3a7-47db-96ef-b6778597d172",
+                  "content_hash": "dfd4a04a2fbd32ba",
+                  "node_type": "table_row",
+                  "title": null,
+                  "text": "",
+                  "level": 1,
+                  "semantic_path": [
+                    "sample.pdf",
+                    "Employee Leave Policy Specification",
+                    "Appendix A: Exceptions"
+                  ],
+                  "parent_id": "doc.1.4.3",
+                  "physical_location": null,
+                  "cross_references": [],
+                  "metadata": {},
+                  "children": [
+                    {
+                      "node_id": "doc.1.4.3.2.1",
+                      "uuid": "543bf676-71b9-40bd-ad8d-77b37691b550",
+                      "content_hash": "09d65fb38e5be9df",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "A",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.pdf",
+                        "Employee Leave Policy Specification",
+                        "Appendix A: Exceptions"
+                      ],
+                      "parent_id": "doc.1.4.3.2",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {},
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.4.3.2.2",
+                      "uuid": "f5ea0069-aa3b-4d2f-a6bf-6cfc049c1b70",
+                      "content_hash": "8347ba230b94ea74",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "1.75",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.pdf",
+                        "Employee Leave Policy Specification",
+                        "Appendix A: Exceptions"
+                      ],
+                      "parent_id": "doc.1.4.3.2",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {},
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.4.3.2.3",
+                      "uuid": "204f2e5e-ba2d-4ceb-8897-37759a54f0b3",
+                      "content_hash": "b97f6ce268b25e8f",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "21.0",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.pdf",
+                        "Employee Leave Policy Specification",
+                        "Appendix A: Exceptions"
+                      ],
+                      "parent_id": "doc.1.4.3.2",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {},
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "node_id": "doc.1.4.3.3",
+                  "uuid": "a5b029ab-0027-4b61-85e1-145b888d20c5",
+                  "content_hash": "dfd4a04a2fbd32ba",
+                  "node_type": "table_row",
+                  "title": null,
+                  "text": "",
+                  "level": 2,
+                  "semantic_path": [
+                    "sample.pdf",
+                    "Employee Leave Policy Specification",
+                    "Appendix A: Exceptions"
+                  ],
+                  "parent_id": "doc.1.4.3",
+                  "physical_location": null,
+                  "cross_references": [],
+                  "metadata": {},
+                  "children": [
+                    {
+                      "node_id": "doc.1.4.3.3.1",
+                      "uuid": "2a85ad41-47f9-4688-9ef8-6cb3409551c3",
+                      "content_hash": "68ed9e5f07d03f82",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "B",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.pdf",
+                        "Employee Leave Policy Specification",
+                        "Appendix A: Exceptions"
+                      ],
+                      "parent_id": "doc.1.4.3.3",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {},
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.4.3.3.2",
+                      "uuid": "35a82a7f-6161-418f-8934-f8ec6c078eee",
+                      "content_hash": "0c9103779a16e8e5",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "1.50",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.pdf",
+                        "Employee Leave Policy Specification",
+                        "Appendix A: Exceptions"
+                      ],
+                      "parent_id": "doc.1.4.3.3",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {},
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.4.3.3.3",
+                      "uuid": "e67dfd7f-ca59-49a4-a01a-2926d512152b",
+                      "content_hash": "38ffa24a234a3408",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "18.0",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.pdf",
+                        "Employee Leave Policy Specification",
+                        "Appendix A: Exceptions"
+                      ],
+                      "parent_id": "doc.1.4.3.3",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {},
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "node_id": "doc.1.4.3.4",
+                  "uuid": "14811f45-234f-44fd-aaeb-18e279c0a719",
+                  "content_hash": "dfd4a04a2fbd32ba",
+                  "node_type": "table_row",
+                  "title": null,
+                  "text": "",
+                  "level": 3,
+                  "semantic_path": [
+                    "sample.pdf",
+                    "Employee Leave Policy Specification",
+                    "Appendix A: Exceptions"
+                  ],
+                  "parent_id": "doc.1.4.3",
+                  "physical_location": null,
+                  "cross_references": [],
+                  "metadata": {},
+                  "children": [
+                    {
+                      "node_id": "doc.1.4.3.4.1",
+                      "uuid": "a76031da-840a-4037-a284-50eae992f76d",
+                      "content_hash": "38204a9308fa2e61",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "C",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.pdf",
+                        "Employee Leave Policy Specification",
+                        "Appendix A: Exceptions"
+                      ],
+                      "parent_id": "doc.1.4.3.4",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {},
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.4.3.4.2",
+                      "uuid": "9fe68f41-bc4e-48a7-a5cc-423088395793",
+                      "content_hash": "c98cda7685ae61fd",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "1.25",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.pdf",
+                        "Employee Leave Policy Specification",
+                        "Appendix A: Exceptions"
+                      ],
+                      "parent_id": "doc.1.4.3.4",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {},
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.4.3.4.3",
+                      "uuid": "db3cc84d-8682-4d50-ad80-13e1e873560b",
+                      "content_hash": "504b87b1c73fdc4a",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "15.0",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.pdf",
+                        "Employee Leave Policy Specification",
+                        "Appendix A: Exceptions"
+                      ],
+                      "parent_id": "doc.1.4.3.4",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {},
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
