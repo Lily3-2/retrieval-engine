@@ -1,0 +1,778 @@
+{
+  "node_id": "doc",
+  "uuid": "393038de-b016-4b6a-84a5-8f3dbec199a8",
+  "content_hash": "fb62326d6fe03528",
+  "node_type": "document",
+  "title": "sample.html",
+  "text": "",
+  "level": null,
+  "semantic_path": [
+    "sample.html"
+  ],
+  "parent_id": null,
+  "physical_location": {
+    "source_format": "html",
+    "char_start": 0,
+    "char_end": 1257
+  },
+  "cross_references": [],
+  "metadata": {},
+  "children": [
+    {
+      "node_id": "doc.1",
+      "uuid": "f6681bf0-290f-4e43-86fd-426197baa8f8",
+      "content_hash": "7f737f156a4d6ffc",
+      "node_type": "section",
+      "title": "Employee Leave Policy Specification",
+      "text": "",
+      "level": 1,
+      "semantic_path": [
+        "sample.html",
+        "Employee Leave Policy Specification"
+      ],
+      "parent_id": "doc",
+      "physical_location": {
+        "source_format": "html"
+      },
+      "cross_references": [],
+      "metadata": {},
+      "children": [
+        {
+          "node_id": "doc.1.1",
+          "uuid": "b9c0a84c-258a-40d1-a043-1be4490c4300",
+          "content_hash": "ca0009ca7d7834af",
+          "node_type": "section",
+          "title": "1. Overview",
+          "text": "",
+          "level": 2,
+          "semantic_path": [
+            "sample.html",
+            "Employee Leave Policy Specification",
+            "1. Overview"
+          ],
+          "parent_id": "doc.1",
+          "physical_location": {
+            "source_format": "html"
+          },
+          "cross_references": [],
+          "metadata": {},
+          "children": [
+            {
+              "node_id": "doc.1.1.1",
+              "uuid": "4836c7f0-177d-4725-a15f-bb8ae0fa24cb",
+              "content_hash": "626ac86c2ffcda92",
+              "node_type": "paragraph",
+              "title": null,
+              "text": "This document defines the accrual and carryover rules for annual leave. See Table 1 for the accrual rate schedule and Section 2.1 for proration rules.",
+              "level": null,
+              "semantic_path": [
+                "sample.html",
+                "Employee Leave Policy Specification",
+                "1. Overview"
+              ],
+              "parent_id": "doc.1.1",
+              "physical_location": {
+                "source_format": "html"
+              },
+              "cross_references": [
+                {
+                  "raw_text": "Section 2.1",
+                  "target_node_id": null,
+                  "resolved": false
+                },
+                {
+                  "raw_text": "Table 1",
+                  "target_node_id": null,
+                  "resolved": false
+                }
+              ],
+              "metadata": {},
+              "children": []
+            }
+          ]
+        },
+        {
+          "node_id": "doc.1.2",
+          "uuid": "f27647ca-5d65-4bbe-a8e8-159216fa100c",
+          "content_hash": "ab8399118b1516b4",
+          "node_type": "section",
+          "title": "2. Accrual Rules",
+          "text": "",
+          "level": 2,
+          "semantic_path": [
+            "sample.html",
+            "Employee Leave Policy Specification",
+            "2. Accrual Rules"
+          ],
+          "parent_id": "doc.1",
+          "physical_location": {
+            "source_format": "html"
+          },
+          "cross_references": [],
+          "metadata": {},
+          "children": [
+            {
+              "node_id": "doc.1.2.1",
+              "uuid": "889d3ccc-0b91-4875-bab5-c19cafdce09d",
+              "content_hash": "a063db6c97c0c731",
+              "node_type": "section",
+              "title": "2.1 Proration",
+              "text": "",
+              "level": 3,
+              "semantic_path": [
+                "sample.html",
+                "Employee Leave Policy Specification",
+                "2. Accrual Rules",
+                "2.1 Proration"
+              ],
+              "parent_id": "doc.1.2",
+              "physical_location": {
+                "source_format": "html"
+              },
+              "cross_references": [],
+              "metadata": {},
+              "children": [
+                {
+                  "node_id": "doc.1.2.1.1",
+                  "uuid": "6d60ca17-f45e-4331-bd9f-ddaa0d36a0b8",
+                  "content_hash": "2c55323fabc8ce68",
+                  "node_type": "paragraph",
+                  "title": null,
+                  "text": "Proration applies to employees who join mid-year. As per Section 3, the proration factor is computed monthly.",
+                  "level": null,
+                  "semantic_path": [
+                    "sample.html",
+                    "Employee Leave Policy Specification",
+                    "2. Accrual Rules",
+                    "2.1 Proration"
+                  ],
+                  "parent_id": "doc.1.2.1",
+                  "physical_location": {
+                    "source_format": "html"
+                  },
+                  "cross_references": [
+                    {
+                      "raw_text": "Section 3",
+                      "target_node_id": null,
+                      "resolved": false
+                    }
+                  ],
+                  "metadata": {},
+                  "children": []
+                }
+              ]
+            },
+            {
+              "node_id": "doc.1.2.2",
+              "uuid": "4eb64b80-b2cd-4fc6-8246-b10a673774ba",
+              "content_hash": "333ab1884a6cd50f",
+              "node_type": "section",
+              "title": "2.2 Ceiling",
+              "text": "",
+              "level": 3,
+              "semantic_path": [
+                "sample.html",
+                "Employee Leave Policy Specification",
+                "2. Accrual Rules",
+                "2.2 Ceiling"
+              ],
+              "parent_id": "doc.1.2",
+              "physical_location": {
+                "source_format": "html"
+              },
+              "cross_references": [],
+              "metadata": {},
+              "children": [
+                {
+                  "node_id": "doc.1.2.2.1",
+                  "uuid": "1bf413fc-15a8-4a9d-9287-537650896b66",
+                  "content_hash": "8722dc6da8f7383f",
+                  "node_type": "paragraph",
+                  "title": null,
+                  "text": "The maximum accrual ceiling is 42 days. Any balance above this ceiling is forfeited at year-end unless covered by an exception in Appendix A.",
+                  "level": null,
+                  "semantic_path": [
+                    "sample.html",
+                    "Employee Leave Policy Specification",
+                    "2. Accrual Rules",
+                    "2.2 Ceiling"
+                  ],
+                  "parent_id": "doc.1.2.2",
+                  "physical_location": {
+                    "source_format": "html"
+                  },
+                  "cross_references": [
+                    {
+                      "raw_text": "Appendix A",
+                      "target_node_id": "doc.1.4",
+                      "resolved": true
+                    }
+                  ],
+                  "metadata": {},
+                  "children": []
+                },
+                {
+                  "node_id": "doc.1.2.2.2",
+                  "uuid": "07359cd4-b782-4dfa-a0d0-f2431064163b",
+                  "content_hash": "d041ea03153db015",
+                  "node_type": "list",
+                  "title": null,
+                  "text": "",
+                  "level": null,
+                  "semantic_path": [
+                    "sample.html",
+                    "Employee Leave Policy Specification",
+                    "2. Accrual Rules",
+                    "2.2 Ceiling"
+                  ],
+                  "parent_id": "doc.1.2.2",
+                  "physical_location": {
+                    "source_format": "html"
+                  },
+                  "cross_references": [],
+                  "metadata": {
+                    "ordered": false
+                  },
+                  "children": [
+                    {
+                      "node_id": "doc.1.2.2.2.1",
+                      "uuid": "2c77b590-a236-421d-bc4b-bc366aff8b3e",
+                      "content_hash": "002f5427184a9da1",
+                      "node_type": "list_item",
+                      "title": null,
+                      "text": "Grade A: 1.75 days per month",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.html",
+                        "Employee Leave Policy Specification",
+                        "2. Accrual Rules",
+                        "2.2 Ceiling"
+                      ],
+                      "parent_id": "doc.1.2.2.2",
+                      "physical_location": {
+                        "source_format": "html"
+                      },
+                      "cross_references": [],
+                      "metadata": {},
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.2.2.2.2",
+                      "uuid": "f56216a0-3e9a-4050-aff7-90b7aafacaec",
+                      "content_hash": "ba15c5bd80e94ae9",
+                      "node_type": "list_item",
+                      "title": null,
+                      "text": "Grade B: 1.50 days per month",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.html",
+                        "Employee Leave Policy Specification",
+                        "2. Accrual Rules",
+                        "2.2 Ceiling"
+                      ],
+                      "parent_id": "doc.1.2.2.2",
+                      "physical_location": {
+                        "source_format": "html"
+                      },
+                      "cross_references": [],
+                      "metadata": {},
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.2.2.2.3",
+                      "uuid": "38821b98-b73c-48d5-812b-079233d079b1",
+                      "content_hash": "3c0ecc7bead477c2",
+                      "node_type": "list_item",
+                      "title": null,
+                      "text": "Grade C: 1.25 days per month",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.html",
+                        "Employee Leave Policy Specification",
+                        "2. Accrual Rules",
+                        "2.2 Ceiling"
+                      ],
+                      "parent_id": "doc.1.2.2.2",
+                      "physical_location": {
+                        "source_format": "html"
+                      },
+                      "cross_references": [],
+                      "metadata": {},
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "node_id": "doc.1.3",
+          "uuid": "aa66a408-9f75-4865-b7df-00c58e266f49",
+          "content_hash": "6e715825bf1baf78",
+          "node_type": "section",
+          "title": "3. Carryover",
+          "text": "",
+          "level": 2,
+          "semantic_path": [
+            "sample.html",
+            "Employee Leave Policy Specification",
+            "3. Carryover"
+          ],
+          "parent_id": "doc.1",
+          "physical_location": {
+            "source_format": "html"
+          },
+          "cross_references": [],
+          "metadata": {},
+          "children": [
+            {
+              "node_id": "doc.1.3.1",
+              "uuid": "50885c36-82ad-4e19-93c5-948f18790c42",
+              "content_hash": "b71e051013c6821d",
+              "node_type": "paragraph",
+              "title": null,
+              "text": "Carryover is calculated at fiscal year-end. See Table 1 for the full accrual schedule referenced above.",
+              "level": null,
+              "semantic_path": [
+                "sample.html",
+                "Employee Leave Policy Specification",
+                "3. Carryover"
+              ],
+              "parent_id": "doc.1.3",
+              "physical_location": {
+                "source_format": "html"
+              },
+              "cross_references": [
+                {
+                  "raw_text": "Table 1",
+                  "target_node_id": null,
+                  "resolved": false
+                }
+              ],
+              "metadata": {},
+              "children": []
+            },
+            {
+              "node_id": "doc.1.3.2",
+              "uuid": "cef66992-120b-4f8b-836e-357418f037cb",
+              "content_hash": "9339a471b6d625a4",
+              "node_type": "table",
+              "title": null,
+              "text": "",
+              "level": null,
+              "semantic_path": [
+                "sample.html",
+                "Employee Leave Policy Specification",
+                "3. Carryover"
+              ],
+              "parent_id": "doc.1.3",
+              "physical_location": {
+                "source_format": "html"
+              },
+              "cross_references": [],
+              "metadata": {},
+              "children": [
+                {
+                  "node_id": "doc.1.3.2.1",
+                  "uuid": "236c53a2-bda4-4fba-8571-562588907440",
+                  "content_hash": "0314beba888dc2a4",
+                  "node_type": "table_row",
+                  "title": null,
+                  "text": "",
+                  "level": 0,
+                  "semantic_path": [
+                    "sample.html",
+                    "Employee Leave Policy Specification",
+                    "3. Carryover"
+                  ],
+                  "parent_id": "doc.1.3.2",
+                  "physical_location": {
+                    "source_format": "html"
+                  },
+                  "cross_references": [],
+                  "metadata": {},
+                  "children": [
+                    {
+                      "node_id": "doc.1.3.2.1.1",
+                      "uuid": "3b126fba-725c-4f8d-8572-2ca8f6cc8f57",
+                      "content_hash": "05f919a829198082",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "Grade",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.html",
+                        "Employee Leave Policy Specification",
+                        "3. Carryover"
+                      ],
+                      "parent_id": "doc.1.3.2.1",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {
+                        "is_header": true
+                      },
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.3.2.1.2",
+                      "uuid": "77b88549-bd11-4930-a5f2-ae1650d67117",
+                      "content_hash": "5bfc8679a2ec5259",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "Monthly Accrual",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.html",
+                        "Employee Leave Policy Specification",
+                        "3. Carryover"
+                      ],
+                      "parent_id": "doc.1.3.2.1",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {
+                        "is_header": true
+                      },
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.3.2.1.3",
+                      "uuid": "7884dadf-053c-477b-a207-30dc25830b67",
+                      "content_hash": "b2026c836676efe3",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "Annual Cap",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.html",
+                        "Employee Leave Policy Specification",
+                        "3. Carryover"
+                      ],
+                      "parent_id": "doc.1.3.2.1",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {
+                        "is_header": true
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "node_id": "doc.1.3.2.2",
+                  "uuid": "9804f218-fc0e-4916-8222-a0783ac60be1",
+                  "content_hash": "0314beba888dc2a4",
+                  "node_type": "table_row",
+                  "title": null,
+                  "text": "",
+                  "level": 1,
+                  "semantic_path": [
+                    "sample.html",
+                    "Employee Leave Policy Specification",
+                    "3. Carryover"
+                  ],
+                  "parent_id": "doc.1.3.2",
+                  "physical_location": {
+                    "source_format": "html"
+                  },
+                  "cross_references": [],
+                  "metadata": {},
+                  "children": [
+                    {
+                      "node_id": "doc.1.3.2.2.1",
+                      "uuid": "e8512503-2c78-4b57-9ccb-77a9b2969ffc",
+                      "content_hash": "46592358fe2769cb",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "A",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.html",
+                        "Employee Leave Policy Specification",
+                        "3. Carryover"
+                      ],
+                      "parent_id": "doc.1.3.2.2",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {
+                        "is_header": false
+                      },
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.3.2.2.2",
+                      "uuid": "3e82adce-6c07-41c9-83b6-8478ea38fd88",
+                      "content_hash": "cb9e8eaa9ed20b15",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "1.75",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.html",
+                        "Employee Leave Policy Specification",
+                        "3. Carryover"
+                      ],
+                      "parent_id": "doc.1.3.2.2",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {
+                        "is_header": false
+                      },
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.3.2.2.3",
+                      "uuid": "02b536ec-5c07-497c-ba3b-fc66ccf97b2f",
+                      "content_hash": "4a694021787868ad",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "21.0",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.html",
+                        "Employee Leave Policy Specification",
+                        "3. Carryover"
+                      ],
+                      "parent_id": "doc.1.3.2.2",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {
+                        "is_header": false
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "node_id": "doc.1.3.2.3",
+                  "uuid": "03f86e6c-3990-4458-8c44-6871164b0a1e",
+                  "content_hash": "0314beba888dc2a4",
+                  "node_type": "table_row",
+                  "title": null,
+                  "text": "",
+                  "level": 2,
+                  "semantic_path": [
+                    "sample.html",
+                    "Employee Leave Policy Specification",
+                    "3. Carryover"
+                  ],
+                  "parent_id": "doc.1.3.2",
+                  "physical_location": {
+                    "source_format": "html"
+                  },
+                  "cross_references": [],
+                  "metadata": {},
+                  "children": [
+                    {
+                      "node_id": "doc.1.3.2.3.1",
+                      "uuid": "6431e971-e8be-4e1b-9d5c-6a0d0b39bf62",
+                      "content_hash": "a758f86d034a4cd2",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "B",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.html",
+                        "Employee Leave Policy Specification",
+                        "3. Carryover"
+                      ],
+                      "parent_id": "doc.1.3.2.3",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {
+                        "is_header": false
+                      },
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.3.2.3.2",
+                      "uuid": "cd8e71f2-7d22-4be3-b076-239be18e070e",
+                      "content_hash": "59baeb458aad6ba1",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "1.50",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.html",
+                        "Employee Leave Policy Specification",
+                        "3. Carryover"
+                      ],
+                      "parent_id": "doc.1.3.2.3",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {
+                        "is_header": false
+                      },
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.3.2.3.3",
+                      "uuid": "2cd5d159-1b1b-42dd-9519-94f0a04eea91",
+                      "content_hash": "7c4114f2c8ff9daa",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "18.0",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.html",
+                        "Employee Leave Policy Specification",
+                        "3. Carryover"
+                      ],
+                      "parent_id": "doc.1.3.2.3",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {
+                        "is_header": false
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "node_id": "doc.1.3.2.4",
+                  "uuid": "8834e5e1-18fa-4108-a2ab-b99051920913",
+                  "content_hash": "0314beba888dc2a4",
+                  "node_type": "table_row",
+                  "title": null,
+                  "text": "",
+                  "level": 3,
+                  "semantic_path": [
+                    "sample.html",
+                    "Employee Leave Policy Specification",
+                    "3. Carryover"
+                  ],
+                  "parent_id": "doc.1.3.2",
+                  "physical_location": {
+                    "source_format": "html"
+                  },
+                  "cross_references": [],
+                  "metadata": {},
+                  "children": [
+                    {
+                      "node_id": "doc.1.3.2.4.1",
+                      "uuid": "74744423-ab3d-43b7-8a6f-31f4fcb9f71a",
+                      "content_hash": "91c45de6523e6de7",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "C",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.html",
+                        "Employee Leave Policy Specification",
+                        "3. Carryover"
+                      ],
+                      "parent_id": "doc.1.3.2.4",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {
+                        "is_header": false
+                      },
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.3.2.4.2",
+                      "uuid": "3614726b-d2aa-4135-bd76-37b4da0fa546",
+                      "content_hash": "526766e7c6742237",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "1.25",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.html",
+                        "Employee Leave Policy Specification",
+                        "3. Carryover"
+                      ],
+                      "parent_id": "doc.1.3.2.4",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {
+                        "is_header": false
+                      },
+                      "children": []
+                    },
+                    {
+                      "node_id": "doc.1.3.2.4.3",
+                      "uuid": "1d455395-4bfb-4977-97b2-7b54213baf43",
+                      "content_hash": "70d7ceeb856fb0ab",
+                      "node_type": "table_cell",
+                      "title": null,
+                      "text": "15.0",
+                      "level": null,
+                      "semantic_path": [
+                        "sample.html",
+                        "Employee Leave Policy Specification",
+                        "3. Carryover"
+                      ],
+                      "parent_id": "doc.1.3.2.4",
+                      "physical_location": null,
+                      "cross_references": [],
+                      "metadata": {
+                        "is_header": false
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "node_id": "doc.1.4",
+          "uuid": "ac678485-49bf-4ae9-8745-ac17af40f2be",
+          "content_hash": "48a3c9a233eb4c2b",
+          "node_type": "section",
+          "title": "Appendix A: Exceptions",
+          "text": "",
+          "level": 2,
+          "semantic_path": [
+            "sample.html",
+            "Employee Leave Policy Specification",
+            "Appendix A: Exceptions"
+          ],
+          "parent_id": "doc.1",
+          "physical_location": {
+            "source_format": "html"
+          },
+          "cross_references": [
+            {
+              "raw_text": "Appendix A",
+              "target_node_id": "doc.1.4",
+              "resolved": true
+            }
+          ],
+          "metadata": {},
+          "children": [
+            {
+              "node_id": "doc.1.4.1",
+              "uuid": "393bcf8f-13de-4982-8cd5-f982a2fab4ea",
+              "content_hash": "a19b126ee5e278cb",
+              "node_type": "quote",
+              "title": null,
+              "text": "Employees on approved sabbatical retain their full accrual ceiling regardless of the standard forfeiture rule in Section 2.2.",
+              "level": null,
+              "semantic_path": [
+                "sample.html",
+                "Employee Leave Policy Specification",
+                "Appendix A: Exceptions"
+              ],
+              "parent_id": "doc.1.4",
+              "physical_location": {
+                "source_format": "html"
+              },
+              "cross_references": [
+                {
+                  "raw_text": "Section 2.2",
+                  "target_node_id": null,
+                  "resolved": false
+                }
+              ],
+              "metadata": {},
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
