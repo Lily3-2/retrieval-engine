@@ -3,9 +3,11 @@ from __future__ import annotations
 import os
 from typing import Any, Dict, List, Optional
 
+DEFAULT_BASELINE_MODEL = os.getenv("DEFAULT_BASELINE_MODEL", "meta-llama/Llama-3.2-3B-Instruct")
+
 
 class BaselineRetriever:
-    def __init__(self, pdf_path: str, model_id: str = "gpt2", chunk_size: int = 200):
+    def __init__(self, pdf_path: str, model_id: str = DEFAULT_BASELINE_MODEL, chunk_size: int = 200):
         self.pdf_path = pdf_path
         self.chunk_size = chunk_size
         try:
@@ -25,10 +27,9 @@ class BaselineRetriever:
         if os.path.isdir(pdf_path):
             texts, info = self.processor.extract_text_from_pdfs_in_folder(pdf_path)
         else:
-            folder = os.path.dirname(pdf_path)
-            texts, info = self.processor.extract_text_from_pdfs_in_folder(folder)
-            if os.path.basename(pdf_path) not in [itm.split()[0] for itm in info]:
-                raise ValueError(f"PDF file not found in folder: {pdf_path}")
+            texts, page_numbers = self.processor.extract_pdf_text(pdf_path)
+            filename = os.path.basename(pdf_path)
+            info = [f"{filename} {page}" for page in page_numbers]
         from RAG.src.IndexManager import IndexManager as _IndexManager
         chunks, chunk_info = _IndexManager.chunk_texts_and_info(texts, info, self.chunk_size)
         return chunks, chunk_info

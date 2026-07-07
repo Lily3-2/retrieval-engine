@@ -10,7 +10,7 @@ from engine.retriever import DASTRetriever
 from .context_builder import build_context
 from .dataset import load_dataset, validate_dataset
 from .generator import AnswerGenerator
-from .metrics import answer_metrics, efficiency, retrieval_metrics, traceability
+from .metrics import answer_metrics, baseline_retrieval_metrics, efficiency, retrieval_metrics, traceability
 from .baseline_adapter import BaselineRetriever
 
 
@@ -35,6 +35,8 @@ def run_benchmark(dast_path: str, questions_path: str, pdf_path: str, output_dir
         answer_data = generator.generate_answer(example.question, context)
         answer_stats = answer_metrics(answer_data["answer"], example.answer)
         trace_score = traceability(answer_data["cited_node_ids"], example.ground_truth_node_ids)
+        baseline_results = baseline.retrieve(example.question, top_k=top_k)
+        baseline_stats = baseline_retrieval_metrics(baseline_results, example.ground_truth_node_ids, index, top_k)
         run_results.append({
             "qid": example.qid,
             "question": example.question,
@@ -45,7 +47,8 @@ def run_benchmark(dast_path: str, questions_path: str, pdf_path: str, output_dir
             "answer_metrics": answer_stats,
             "traceability": trace_score,
             "efficiency": efficiency(duration, answer_data["prompt_tokens"], answer_data["completion_tokens"]),
-            "baseline_results": baseline.retrieve(example.question, top_k=top_k),
+            "baseline_results": baseline_results,
+            "baseline_metrics": baseline_stats,
         })
 
     output_path = os.path.join(output_dir, f"run_{int(time.time())}.json")

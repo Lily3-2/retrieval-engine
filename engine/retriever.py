@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
 from typing import Any, Callable, Dict, List
 
 from dast_schema import DASTNode
@@ -15,18 +14,8 @@ from .scoring import (
     structural_score,
     xref_score,
 )
+from .types import ScoredNode
 from .traversal import bfs, dfs, best_first
-
-
-@dataclass
-class ScoredNode:
-    node_id: str
-    score: float
-    factors: Dict[str, float]
-    matched_terms: List[str]
-    semantic_path: List[str]
-    physical_location: Dict[str, Any]
-    text: str
 
 
 ScoreFn = Callable[[Query, DASTNode], ScoredNode]

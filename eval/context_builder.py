@@ -63,11 +63,13 @@ def build_context(results: List, index: DASTIndex, policy: str = "node_plus_pare
 
     context = []
     token_sum = 0
+    truncated_ids: List[str] = []
     for block, node_id in zip(blocks, included_ids):
         block_tokens = _token_count(block)
         if token_sum + block_tokens > max_tokens:
             break
         context.append(block)
+        truncated_ids.append(node_id)
         token_sum += block_tokens
 
-    return "\n\n".join(context), included_ids
+    return "\n\n".join(context), truncated_ids
