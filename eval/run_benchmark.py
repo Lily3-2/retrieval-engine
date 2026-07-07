@@ -51,9 +51,22 @@ def run_benchmark(dast_path: str, questions_path: str, pdf_path: str, output_dir
             "baseline_metrics": baseline_stats,
         })
 
+    def _mean(rows: List[Dict[str, Any]], path: tuple[str, str]) -> float:
+        vals = [r[path[0]][path[1]] for r in rows]
+        return sum(vals) / len(vals) if vals else 0.0
+
+    summary = {
+        "dast_precision@k": _mean(run_results, ("retrieval_metrics", "precision@k")),
+        "dast_recall@k": _mean(run_results, ("retrieval_metrics", "recall@k")),
+        "baseline_precision@k": _mean(run_results, ("baseline_metrics", "precision@k")),
+        "answer_f1": _mean(run_results, ("answer_metrics", "f1")),
+        "mean_traceability": sum(r["traceability"] for r in run_results) / len(run_results) if run_results else 0.0,
+        "mean_latency_s": _mean(run_results, ("efficiency", "latency_s")),
+    }
+
     output_path = os.path.join(output_dir, f"run_{int(time.time())}.json")
     with open(output_path, "w", encoding="utf-8") as f:
-        json.dump({"results": run_results}, f, indent=2)
+        json.dump({"summary": summary, "results": run_results}, f, indent=2)
     return {"output_path": output_path, "num_examples": len(run_results)}
 
 

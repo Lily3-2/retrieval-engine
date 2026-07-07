@@ -21,7 +21,8 @@ class AnswerGenerator:
                 raise RuntimeError("LLM is not available for answer generation") from exc
 
         answer = self.llm.decode(prompt, max_new_tokens=max_new_tokens, temperature=temperature)
-        answer_text = answer.strip()
+        generated = answer[len(prompt):] if answer.startswith(prompt) else answer
+        answer_text = generated.strip()
         cited_node_ids = []
         try:
             import re
@@ -34,5 +35,5 @@ class AnswerGenerator:
             "answer": answer_text,
             "cited_node_ids": cited_node_ids,
             "prompt_tokens": len(prompt.split()),
-            "completion_tokens": len(answer.split()),
+            "completion_tokens": len(answer_text.split()),
         }
