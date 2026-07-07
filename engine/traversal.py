@@ -4,7 +4,7 @@ import heapq
 from collections import deque
 from typing import Callable, List
 
-from .retriever import ScoredNode
+from .types import ScoredNode
 from dast_schema import DASTNode
 
 ScoreFn = Callable[["Query", DASTNode], ScoredNode]
@@ -43,7 +43,7 @@ def best_first(index, q, score_fn: ScoreFn, top_k: int, beam: int | None = None,
     heapq.heappush(heap, (-initial.score, counter, index.root, initial))
     scored = {}
 
-    while heap and len(scored) < max(top_k, 64):
+    while heap and len(scored) < max(top_k, 512):
         _, _, node, node_score = heapq.heappop(heap)
         if node.node_id in scored:
             continue

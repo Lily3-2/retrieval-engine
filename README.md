@@ -1,5 +1,6 @@
 # Task 1 — Document AST & Parsing (DAST)
 
+DAST - Document Abstract Syntax Tree
 POC deliverable: a single schema (`dast_schema.py`) + three format parsers
 (Markdown, HTML, PDF) that all normalize into the same tree shape, proving a
 document can be treated as a structured, traversable object rather than

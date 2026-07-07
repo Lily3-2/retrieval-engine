@@ -36,8 +36,8 @@ class DASTIndex:
         root = cls._node_from_dict(payload)
         return cls(root)
 
-    @staticmethod
-    def _node_from_dict(data: Dict[str, Any]) -> DASTNode:
+    @classmethod
+    def _node_from_dict(cls, data: Dict[str, Any]) -> DASTNode:
         location = None
         if data.get("physical_location") is not None:
             location = PhysicalLocation(**data["physical_location"])

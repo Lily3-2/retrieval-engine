@@ -35,6 +35,7 @@ class PDFProcessor:
         print(f"Found {len(pdf_paths)} PDF files")
         return pdf_paths
 
+    @staticmethod
     def extract_pdf_text(path: str) -> Tuple[List[str], List[int]]:
         """
         Extract text from the input PDF file, with images analyzed using OCR.
@@ -73,6 +74,7 @@ class PDFProcessor:
 
         return texts, page_numbers
 
+    @staticmethod
     def extract_text_from_pdfs_in_folder(folder_path) -> Tuple[List[str], List[str]]:
         """
         Processes all PDFs in the folder and extracts text and OCR content.

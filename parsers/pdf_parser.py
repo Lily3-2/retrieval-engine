@@ -178,21 +178,10 @@ class PDFParser:
  
         resolve_cross_references(root)
         root.finalize()
- 
-
-        output_dir = "/Users/anushkaupadhyay/Downloads/dast_poc/output"
-        os.makedirs(output_dir, exist_ok=True)
-
-        output_file = os.path.join(output_dir, "Parser_pdf.dast.json")
-
-        with open(output_file, "w", encoding="utf-8") as f:
-            json.dump(root.to_dict(), f, indent=2, ensure_ascii=False)
-        
-        print(f"DAST saved to {output_file}")
         return root
     
 if __name__ == "__main__":
-    pdf_path = "/Users/anushkaupadhyay/Downloads/dast_poc/demo/sample.pdf"
+    pdf_path = "D:/Mine/Post-grad-prep/retrieval-engine/benchmark/document.pdf"
 
     parser = PDFParser()
     root = parser.parse(pdf_path)
