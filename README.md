@@ -154,3 +154,11 @@ score), and `node_type`/`level` (structural weighting — e.g. weight SECTION
 titles higher than deeply-nested LIST_ITEMs). No additional preprocessing
 should be needed to start Task 2's traversal engine directly against these
 JSON trees.
+
+
+Steps to run:
+parse document2 -> DAST
+python3 - c "from parsers.pdf_parser import PDFParser; import json; \
+r=PDFParser().parse('benchmark/document2.pdf');\
+json.dump(r.to_dict(), open('benchmark/document2.dast.json', 'w'), indent=2);\
+print('wrote benchmark/document2.dast.json')"
