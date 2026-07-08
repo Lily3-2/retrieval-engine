@@ -3,23 +3,32 @@ from __future__ import annotations
 from typing import Any, Dict, List
 
 
-def retrieval_metrics(retrieved_ids: List[str], ground_truth_ids: List[str], k: int) -> Dict[str, float]:
-    retrieved_set = set(retrieved_ids[:k])
-    ground_truth_set = set(ground_truth_ids)
-    true_positives = len(retrieved_set & ground_truth_set)
-    precision = true_positives / max(1, k)
-    recall = true_positives / max(1, len(ground_truth_set))
+def _related(a: str, b: str) -> bool:                                                                                     """True if a == b, OR a is an ancestor of b, OR a is a descendant of b.
+node_ids are dot-encoded paths (e.g. 'doc.19.1'), so ancestry is a prefix test.
+Returning the section that CONTAINS the answer leaf (or a leaf under it) is a legitimate hit in hierarchical retrieval.
+"""
+    return a == b or b.startswith(a + ".") or a.startswith(b + ".")                                                                                                                                        
+def retrieval_metrics(retrieved_ids: List[str], ground_truth_ids: List[str], k: int) ->Dict[str, float]:                                                
+    retrieved = retrieved_id[:k]
+    gt = list(ground_truth_ids)
+    # a retrieved node is a true positive if it is (or contains, or sits under) any gt node                                                              
+    tp_retrieved = sum(1 for r in retrieved if any(_related(r, g) for g in gt))
+    # a gt node is "covered" if any retrieved node is related to it
+    covered_gt = sum(1 for g in gt if any(_related(r, g) for r in retrieved))
+    precision = tp_retrieved / max(1, k)
+    recall = covered_gt / max(1, len(gt)
     rr = 0.0
-    for rank, node_id in enumerate(retrieved_ids[:k], start=1):
-        if node_id in ground_truth_set:
+    for rank, r in enumerate(retrieved, start=1):
+        if any(_related(r, g) for g in gt):
             rr = 1.0 / rank
             break
-    hit = 1.0 if true_positives > 0 else 0.0
+    
+    hit = 1.0 if tp_retrieved > 0 else 0.0
     return {
-        "precision@k": precision,
-        "recall@k": recall,
-        "mrr": rr,
-        "hit@k": hit,
+        "precision@k":precision,
+        "recall@k":recall,
+        "mrr":rr,
+        "hit@k":hit,                                                              
     }
 
 
