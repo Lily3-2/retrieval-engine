@@ -3,20 +3,25 @@ from __future__ import annotations
 from typing import Any, Dict, List
 
 
-def _related(a: str, b: str) -> bool:                                                                                     """True if a == b, OR a is an ancestor of b, OR a is a descendant of b.
+def _related(a: str, b: str) ->bool:
+    """True if a == b, OR a is an ancestor of b, OR a is a descendant of b.
 node_ids are dot-encoded paths (e.g. 'doc.19.1'), so ancestry is a prefix test.
 Returning the section that CONTAINS the answer leaf (or a leaf under it) is a legitimate hit in hierarchical retrieval.
 """
-    return a == b or b.startswith(a + ".") or a.startswith(b + ".")                                                                                                                                        
-def retrieval_metrics(retrieved_ids: List[str], ground_truth_ids: List[str], k: int) ->Dict[str, float]:                                                
-    retrieved = retrieved_id[:k]
+    return a == b or b.startswith(a + ".") or a.startswith(b + ".")
+
+
+def retrieval_metrics(retrieved_ids: List[str], ground_truth_ids: List[str], k: int) ->Dict[str, float]:
+    retrieved = retrieved_ids[:k]
     gt = list(ground_truth_ids)
-    # a retrieved node is a true positive if it is (or contains, or sits under) any gt node                                                              
+    # a retrieved node is a true positive if it is (or contains, or sits under) any gt node
     tp_retrieved = sum(1 for r in retrieved if any(_related(r, g) for g in gt))
     # a gt node is "covered" if any retrieved node is related to it
     covered_gt = sum(1 for g in gt if any(_related(r, g) for r in retrieved))
+
     precision = tp_retrieved / max(1, k)
-    recall = covered_gt / max(1, len(gt)
+    recall = covered_gt / max(1, len(gt))
+    
     rr = 0.0
     for rank, r in enumerate(retrieved, start=1):
         if any(_related(r, g) for g in gt):
