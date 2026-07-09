@@ -8,11 +8,12 @@ print('wrote benchmark/document2.dast.json')
 
 
 # #Step2: browse the tree to pick real node_ids for our questions
-# # this is the helper we will use to author ground-truth. Search the parsed doc for text, and it prints the mtching node_ids (which we paste into questions.jsonl)
+# # this is the helper we will use to author ground-truth. Search the parsed doc for text, and it prints the mtching node_ids (which we paste into questions.jsonl) it waits for user input
 d=json.load(open('benchmark/document2.dast.json'))
 def walk(n):
   yield n
   for c in n['children']: yield from walk(c)
+
 term=input('search term: ').lower()
 for n in walk(d):
   txt=((n.get('title') or '')+' '+(n.get('text') or '')).lower()
@@ -36,7 +37,7 @@ def related (a, b):
 
 
 idx=DASTIndex.from_json('benchmark/document2.dast.json')
-eng = DASTRetriever(idx, startegy="best_first")
+eng = DASTRetriever(idx, strategy="best_first")
 
 strict = lenient = total = 0
 for line in open('benchmark/questions.jsonl'):
@@ -62,6 +63,9 @@ for x in DASTRetriever(idx).retrieve('tips for writing job descriptions', top_k=
 import os
 from eval.run_benchmark import run_benchmark
 
+os.environ.setdefault("HF_TOKEN", "hf_XXXX")  # replace with your HuggingFace token
+os.environ.setdefault("DEFAULT_ANSWER_MODEL", "Qwen/Qwen2.5-3B-Instruct")  # replace with your preferred model
+
 result = run_benchmark(
   dast_path='benchmark/document2.dast.json',
   questions_path='benchmark/questions.jsonl',
@@ -69,11 +73,11 @@ result = run_benchmark(
   output_dir='results',
   top_k=8,
 )
-print("Benhmark complete:", result)
+print("Benchmark complete:", result)
 
 
 
 # pretty-print the summary block
-data = json.load(open(result['output_dir']))
+data = json.load(open(result['output_path']))
 print("\n=== SUMMARY ===")
 print(json.dumps(data['summary'], indent=2))
