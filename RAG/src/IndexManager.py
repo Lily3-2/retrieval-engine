@@ -1,7 +1,7 @@
 import torch
 import faiss
 from typing import List, Tuple
-from src.LargeLanguageModel import LargeLanguageModel
+from .LargeLanguageModel import LargeLanguageModel
 
 
 class IndexManager:

@@ -21,7 +21,15 @@ class AnswerGenerator:
                 raise RuntimeError("LLM is not available for answer generation") from exc
 
         answer = self.llm.decode(prompt, max_new_tokens=max_new_tokens, temperature=temperature)
-        generated = answer[len(prompt):] if answer.startswith(prompt) else answer
+        # decode() returns prompt + generation. A byte-for-byte prefix strip is
+        # unreliable (tokenizer round-trips normalise whitespace), so key off the
+        # prompt's trailing "Answer:" marker instead and take what comes after it.
+        if "Answer:" in answer:
+            generated = answer.rsplit("Answer:", 1)[-1]
+        elif answer.startswith(prompt):
+            generated = answer[len(prompt):]
+        else:
+            generated = answer
         answer_text = generated.strip()
         cited_node_ids = []
         try:

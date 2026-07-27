@@ -19,6 +19,7 @@ class BaselineRetriever:
 
         self.llm = LargeLanguageModel(model_id, use_fp16=False)
         self.processor = PDFProcessor()
+        self._index_manager_cls = IndexManager
         texts, info = self._load_pdf_chunks(pdf_path)
         self.index_manager = IndexManager(texts, info, self.llm)
         self.index_manager.create_index(texts)
@@ -30,8 +31,7 @@ class BaselineRetriever:
             texts, page_numbers = self.processor.extract_pdf_text(pdf_path)
             filename = os.path.basename(pdf_path)
             info = [f"{filename} {page}" for page in page_numbers]
-        from RAG.src.IndexManager import IndexManager as _IndexManager
-        chunks, chunk_info = _IndexManager.chunk_texts_and_info(texts, info, self.chunk_size)
+        chunks, chunk_info = self._index_manager_cls.chunk_texts_and_info(texts, info, self.chunk_size)
         return chunks, chunk_info
 
     def retrieve(self, question: str, top_k: int = 8) -> List[Dict[str, Any]]:

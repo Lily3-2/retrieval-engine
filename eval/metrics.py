@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from collections import Counter
 from typing import Any, Dict, List
 
 
@@ -43,8 +44,16 @@ def answer_metrics(prediction: str, gold: str) -> Dict[str, float]:
     exact_match = 1.0 if lower_pred == lower_gold else 0.0
     pred_tokens = lower_pred.split()
     gold_tokens = lower_gold.split()
-    common = set(pred_tokens) & set(gold_tokens)
-    f1 = (2 * len(common) / (len(pred_tokens) + len(gold_tokens))) if pred_tokens and gold_tokens else 0.0
+    # SQuAD-style token F1: multiset (Counter) overlap, not set overlap, so that
+    # repeated words are weighted correctly.
+    overlap = Counter(pred_tokens) & Counter(gold_tokens)
+    num_common = sum(overlap.values())
+    if not pred_tokens or not gold_tokens or num_common == 0:
+        f1 = 0.0
+    else:
+        precision = num_common / len(pred_tokens)
+        recall = num_common / len(gold_tokens)
+        f1 = 2 * precision * recall / (precision + recall)
     return {
         "exact_match": exact_match,
         "f1": f1,
