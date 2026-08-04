@@ -1,5 +1,6 @@
 import os
 import glob
+import shutil
 import fitz
 import io
 from PIL import Image
@@ -7,12 +8,24 @@ import pytesseract
 
 from typing import List, Tuple
 
-# Configure pytesseract to use Homebrew-installed tesseract
-pytesseract.pytesseract.pytesseract_cmd = '/opt/homebrew/bin/tesseract'
+# Find the tesseract binary portably instead of hardcoding a Homebrew path
+# (which only exists on Apple-Silicon Macs). Falls back to the common install
+# locations, and if none are found OCR is simply skipped (see extract_pdf_text).
+_TESSERACT_CANDIDATES = (
+    '/opt/homebrew/bin/tesseract',   # Apple Silicon Homebrew
+    '/usr/local/bin/tesseract',      # Intel Homebrew
+    '/usr/bin/tesseract',            # Linux
+)
+_TESSERACT_BIN = shutil.which('tesseract') or next(
+    (p for p in _TESSERACT_CANDIDATES if os.path.exists(p)), None
+)
+if _TESSERACT_BIN:
+    pytesseract.pytesseract.tesseract_cmd = _TESSERACT_BIN
+    _bin_dir = os.path.dirname(_TESSERACT_BIN)
+    if _bin_dir not in os.environ.get('PATH', ''):
+        os.environ['PATH'] = _bin_dir + os.pathsep + os.environ.get('PATH', '')
 
-# Also add to PATH for subprocess calls
-if '/opt/homebrew/bin' not in os.environ.get('PATH', ''):
-    os.environ['PATH'] = '/opt/homebrew/bin:' + os.environ.get('PATH', '')
+HAS_TESSERACT = _TESSERACT_BIN is not None
 
 
 class PDFProcessor:
@@ -59,15 +72,20 @@ class PDFProcessor:
                 if text.strip():
                     page_text = text
 
-                # Extract images and perform OCR
-                for img_tuple in page.get_images(full=True):
-                    xref = img_tuple[0]
-                    image_bytes = doc.extract_image(xref)["image"]
-                    image = Image.open(io.BytesIO(image_bytes))
-                    ocr_text = pytesseract.image_to_string(image)
-
-                    if ocr_text.strip():
-                        page_text += "\n" + ocr_text
+                # Extract images and perform OCR (skip entirely if tesseract
+                # is unavailable, and never let a single bad image abort the run)
+                if HAS_TESSERACT:
+                    for img_tuple in page.get_images(full=True):
+                        try:
+                            xref = img_tuple[0]
+                            image_bytes = doc.extract_image(xref)["image"]
+                            image = Image.open(io.BytesIO(image_bytes))
+                            ocr_text = pytesseract.image_to_string(image)
+                            if ocr_text.strip():
+                                page_text += "\n" + ocr_text
+                        except Exception:
+                            # OCR is best-effort enrichment; keep going.
+                            continue
 
                 page_numbers.append(page_num + 1)
                 texts.append(page_text)
